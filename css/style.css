@@ -1,3 +1,48 @@
-h1{
-    color:brown;
-}
+body#paginaprincipal
+    h1{
+        color:brown;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+    }
+    h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        text-align: center;
+    }
+    h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+    
+    }
+    footer{
+        text-align: center;
+    }
+
+body#clases
+    h1{
+        color:brown;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+    }
+    li{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:large;
+    }
+    p{
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+        margin-left: 60px;
+        margin-right: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+  
