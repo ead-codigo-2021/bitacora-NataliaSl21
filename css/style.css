@@ -1,41 +1,54 @@
-body#paginaprincipal
+:root{
+    --font-family-base: 'Roboto' , sans-serif;
+    --font-family-title: 'Zilla Slab', serif;
+}
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 13px;
+    }
+}
+body#paginaprincipal{
+  font-family: var(--font-family-base);
+}
     h1{
         color:brown;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: x-large;
+        font-size: 30px;
         font-weight: bold;
         text-align: center;
     }
     h2{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
         font-weight: lighter;
         text-align: center;
     }
     h3{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-family: var(--font-family-title);
         font-weight: normal;
     
     }
     footer{
+        
+        font-family: var(--font-family-title);
         text-align: center;
     }
-
-body#clases
+body#clases{
+    font-family: var(--font-family-base);
+}
     h1{
         color:brown;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: x-large;
+        font-size: 30px;
         font-weight: bold;
         text-align: center;
     }
     li{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size:large;
+       
+        font-size:20px;
     }
     p{
+        font-family: var(--font-family-title);
         text-align: justify;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: small;
+        font-size: 16px;
         margin-left: 60px;
         margin-right: 40px;
         margin-top: 10px;
