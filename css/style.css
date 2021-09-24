@@ -10,6 +10,28 @@
 body#paginaprincipal{
   font-family: var(--font-family-base);
 }
+  
+    header{
+        display: block;
+        height: 6em;
+        background-color: #ffffff;
+        background-size: 0;
+    }
+    nav{
+        height: 100%;
+        width: 170px;
+        position: fixed;
+        z-index: 1;
+        top: 1;
+        left: 1;
+        background-color: #EAE4E2;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      
+      .main {
+        margin-left: 200px;
+      }
     h1{
         color:brown;
         font-size: 30px;
@@ -26,7 +48,7 @@ body#paginaprincipal{
         font-family: var(--font-family-title);
         font-weight: normal;
     
-    }
+    }  
     footer{
         
         font-family: var(--font-family-title);
@@ -34,6 +56,14 @@ body#paginaprincipal{
     }
 body#clases{
     font-family: var(--font-family-base);
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: #EAD3C7;
 }
     h1{
         color:brown;
@@ -47,7 +77,7 @@ body#clases{
     }
     p{
         font-family: var(--font-family-title);
-        text-align: justify;
+        text-align: left;
         font-size: 16px;
         margin-left: 60px;
         margin-right: 40px;
@@ -57,5 +87,8 @@ body#clases{
     img{
         display: block;
         margin: auto;
-    }
+       height: 500px;
+       display: flex;
+}
+    
   
