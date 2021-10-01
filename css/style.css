@@ -18,18 +18,39 @@ body#paginaprincipal{
         background-size: 0;
     }
     nav{
-        height: 100%;
+        padding: 10px;
         width: 170px;
         position: fixed;
-        z-index: 1;
-        top: 1;
-        left: 1;
         background-color: #EAE4E2;
         overflow-x: hidden;
-        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
       }
-      
-      .main {
+    .nav-enlace{
+        background: brown;
+        color:white;
+        padding: 10px 30px;
+        margin: 10px 20px;
+        display:inline-block;
+        text-decoration: none;
+    }
+    .nav-enlace:hover{
+        background: rgb(110, 56, 56);
+        transition: 0.5s;
+    }
+    .toggle{
+        color: brown;
+        background: none;
+        border: none;
+        font-size: 40px;
+        padding: 0 20px;
+        display: none;
+
+    }
+    @media (max-width: 768px){
+    }
+
+    .main {
         margin-left: 200px;
       }
     h1{
@@ -54,16 +75,41 @@ body#paginaprincipal{
         font-family: var(--font-family-title);
         text-align: center;
     }
+
+
 body#clases{
     font-family: var(--font-family-base);
 }
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
 
+#imagenpresentacion{
+    max-width: 400px;
+    align-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15% 80%;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.box1{
+    grid-row: 1/5;
+}
+
+.box3{
+    display: grid;
+    grid-gap: 40px;
+}
+.box31{
+    background-color: #EAD3C7;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+a.button {
     text-decoration: none;
     color: #EAD3C7;
+    
 }
     h1{
         color:brown;
@@ -84,11 +130,8 @@ a.button {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    img{
-        display: block;
-        margin: auto;
-       height: 500px;
-       display: flex;
+.container img{
+       inline-size: 100%;
 }
     
   
