@@ -9,50 +9,74 @@
 }
 body#paginaprincipal{
   font-family: var(--font-family-base);
+  padding: 90px 20px 0px;
 }
   
-    header{
-        display: block;
-        height: 6em;
-        background-color: #ffffff;
-        background-size: 0;
-    }
-    nav{
-        padding: 10px;
-        width: 170px;
-        position: fixed;
-        background-color: #EAE4E2;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-      }
-    .nav-enlace{
-        background: brown;
-        color:white;
-        padding: 10px 30px;
-        margin: 10px 20px;
-        display:inline-block;
-        text-decoration: none;
-    }
-    .nav-enlace:hover{
-        background: rgb(110, 56, 56);
-        transition: 0.5s;
-    }
-    .toggle{
-        color: brown;
-        background: none;
-        border: none;
-        font-size: 40px;
-        padding: 0 20px;
-        display: none;
+.header {
+    background-color: brown;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
 
-    }
-    @media (max-width: 768px){
-    }
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+  }
 
-    .main {
+  .nav .nav-menu .nav-menu-item ul{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      position: absolute;
+      background-color: brown;
+      display: none;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  .nav-menu-link .nav-link{
+      text-align: center;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: rgb(90, 47, 47);
+    transition: 0.5s;
+  }
+
+  .header .nav .nav-menu .nav-menu-item:hover > ul{
+      display: block;
+  }
+    
+.main {
         margin-left: 200px;
-      }
+}
     h1{
         color:brown;
         font-size: 30px;
@@ -87,13 +111,15 @@ body#clases{
 }
 .container{
     display: grid;
-    grid-template-columns: 15% 80%;
-    grid-gap: 20px;
-    margin: 0 auto;
+    margin: 90px;
 }
 
 .box1{
-    grid-row: 1/5;
+    grid-column: auto;
+    grid-row: 2/1;
+}
+.box2{
+    margin-left: 5em;
 }
 
 .box3{
@@ -109,7 +135,7 @@ body#clases{
 a.button {
     text-decoration: none;
     color: #EAD3C7;
-    
+
 }
     h1{
         color:brown;
@@ -134,4 +160,7 @@ a.button {
        inline-size: 100%;
 }
     
-  
+body{
+    background-image: url('..//Imágenes/fondobitacora.jpg');
+    background-size: 100%;
+}
