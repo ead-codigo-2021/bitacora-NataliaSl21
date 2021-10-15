@@ -25,7 +25,7 @@ body#paginaprincipal{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 992px;
+    max-width:1350px;
     margin: 0 auto;
   }
   
@@ -105,31 +105,111 @@ body#clases{
     font-family: var(--font-family-base);
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Barra-navegación Barra-navegación Barra-navegación Barra-navegación Barra-navegación"
+      ". Título Título Título ."
+      "Tema-1 Tema-1 Fotos1 Fotos1 Datos"
+      "Tema-1 Tema-1 Fotos1 Fotos1 Datos"
+      "Tema-2 Tema-2 Fotos2 Fotos2 Datos"
+      "Tema-2 Tema-2 Fotos2 Fotos2 Datos"
+      "Tema-3 Tema-3 Fotos3 Fotos3 Datos"
+      "Tema-3 Tema-3 Fotos3 Fotos3 Datos"
+      "Tema-4 Tema-4 Fotos4 Fotos4 Datos"
+      "Tema-4 Tema-4 Fotos4 Fotos4 Datos";
+    margin: 15px;
+    height: fit-content;
+  }
+  
+  .Tema-1 { grid-area: Tema-1; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;
+    }
+
+  
+  .Tema-2 { grid-area: Tema-2; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+  .Tema-3 { grid-area: Tema-3; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+  .Barra-navegación { grid-area: Barra-navegación; 
+    background-color: brown;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;}
+  
+  .Título { grid-area: Título; 
+    text-align: center;
+    align-self: center;
+    height: fit-content;
+    margin: 10px;
+}
+
+  
+  .Tema-4 { grid-area: Tema-4; 
+    background-color:white;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;}
+  
+  .Datos { grid-area: Datos; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+  .Fotos1 { grid-area: Fotos1; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+  .Fotos2 { grid-area: Fotos2; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+  .Fotos3 { grid-area: Fotos3; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+  .Fotos4 { grid-area: Fotos4; 
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;}
+  
+
+
 #imagenpresentacion{
     max-width: 400px;
     align-content: center;
-}
-.container{
-    display: grid;
-    margin: 90px;
-}
-
-.box1{
-    grid-column: auto;
-    grid-row: 2/1;
-}
-.box2{
-    margin-left: 5em;
-}
-
-.box3{
-    display: grid;
-    grid-gap: 40px;
-}
-.box31{
-    background-color: #EAD3C7;
-    border-radius: 15px;
-    padding: 20px;
 }
 
 a.button {
@@ -162,5 +242,8 @@ a.button {
     
 body{
     background-image: url('..//Imágenes/fondobitacora.jpg');
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
